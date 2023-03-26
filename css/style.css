@@ -8,34 +8,32 @@
 
 * {
     font-family: 'Gilroy-Bold', sans-serif;
-    /* font-size: 14px; */
 }
 
 .main-container {
-    /* background-color: red; */
-    margin: auto;
-    width: 950px;
+    margin: 0 auto;
+    max-width: 920px;
+    padding: 0 15px;
 }
 
 
 
-.navigate-menu__link {
+.navigate-menu__link, .navigate-menu__link_selected {
     font-size: var(--text-size-header);
     color: var(--gray-text-color);    
 }
 
+.navigate-menu__link_selected {
+    color: var(--black-text-color);
+}
 
 .navigate-menu__link:hover {
     color: var(--black-text-color);
+    transition: 0.4s ease-in-out;
 }
-/* .navigate-menu__link:visited {
-    color: inherit;
-} */
 
 .header__wrapper {
-    height: 90px;
     display: flex;
-
 }
 
 .navigate-menu__wrapper {
@@ -45,7 +43,7 @@
 }
 
 .navigate-menu__item {
-    padding: 30px 0;
+    padding: 34px 0;
 }
 
 .header {
@@ -54,6 +52,7 @@
 }
 
 .homepage {
+    display: flex;
     margin-bottom: 105px;
 }
 
@@ -78,22 +77,36 @@
 }
 
 .bio__locale {
-    height: 100%;
     font-size: 16px;
     transform: translateX(24px) rotate(-90deg);
     align-self: center;
     color: var(--gray-text-color);
-    
 }
 
 .bio__locale_activated {
     color: var(--black-text-color)
 }
 
+.bio-hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bio-hamburger__item{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--black-text-color);
+}
+
+.homepage__photo img{
+    width: 100%;
+}
+
 .about {
-    height: 506px;
     background-color: var(--background-page-color);
-    
 }
 
 .about-header {
@@ -107,7 +120,7 @@
 .about-description {
     display: flex;
     flex-direction: column;
-    margin-bottom: 62px;
+    padding-bottom: 65px;
 }
 
 .about-description__item {
@@ -118,11 +131,9 @@
 }
 
 .skills-page{
-    height: 610px;
+    padding-bottom: 110px;
 }
-.main-container{
 
-}
 .skills-page__title{
     font-size: 34px;
     text-align: center;
@@ -147,11 +158,11 @@
 .skill-card__img{
     margin-bottom: 23px;
 }
+
 .skill-card__title{
     text-align: center;
     font-size: var(--text-size-default);
     color: var(--gray-text-color);
-    width: 85px;
     margin-bottom: 41px;
     flex: 1;
 }
@@ -225,6 +236,11 @@
 .portfolio-item__img{
     margin-bottom: 45px;
 }
+
+.portfolio-item__img img {
+    width: 100%;
+}
+
 .portfolio-item__title{
     font-family: 'Gilroy-Medium', sans-serif;
     font-size: var(--text-size-header);
@@ -250,7 +266,7 @@
 
 
 .contacts-container{
-    width: 343px;
+    max-width: 343px;
     margin: 0 auto;
 }
 .contacts-menu{

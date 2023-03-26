@@ -1,0 +1,144 @@
+@media (max-width: 767px) {
+    .main-container {
+        padding: 0 30px;
+    }
+
+    .header {
+        margin: 0;
+        border: none;
+    }
+
+    .hidden {
+        overflow: hidden;
+    }
+
+    .navigate-menu__wrapper {
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        gap: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .navigate-menu__wrapper_activate {
+        left: 0;
+        justify-content: start;
+        height: 100%;
+        top: 10px;
+    }
+
+    .homepage__photo {
+        background-image: url(/img/photo_mob.png);
+    }
+
+    .navigate-menu__item {
+        padding-bottom: 0;
+        padding-left: 30px;
+        padding-top: 60px;
+    }
+
+    .navigate-menu__link, .navigate-menu__link_selected {
+        font-size: 34px;
+    }
+    
+    .bio-hamburger {
+        display: block;
+        max-height: 26px;
+        z-index: 50;
+    }
+
+    .bio-hamburger_activate 
+    .bio-hamburger__item {
+        background-color: #828282;
+    }
+
+    .bio-hamburger_activate 
+    .bio-hamburger__item:nth-child(2) {
+        opacity: 0;
+    }
+
+    .bio-hamburger_activate 
+    .bio-hamburger__item:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .bio-hamburger_activate 
+    .bio-hamburger__item:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+
+    .bio__wrapper {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .bio__locale {
+        display: none;
+    }
+
+    .bio__locale_active {
+        display: block;
+        z-index: 50;
+        position: fixed;
+        bottom: 110px;
+        font-size: 34px;
+        right: -20px;
+        transform: rotate(90deg);
+    }
+
+    .bio__info {
+        align-self: inherit;
+        padding-bottom: 0;
+    }
+
+    
+
+    .bio__fullname {
+        margin-bottom: 23px;
+    }
+
+    .homepage__header {
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 36px;
+    }
+    
+    .skill-cards {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .skill-card {
+        margin-bottom: 85px;
+    }
+
+    .skills-page {
+        padding-bottom: 0;
+    }
+
+    .about-header, .skills-page__title,
+    .portfolio-page__title, .contacts-menu__title {
+        padding-top: 80px;
+    }
+
+    .portfolio-item {
+        margin-bottom: 70px;
+    }
+
+    .skills-page__title, .skills-page__subtitle {
+        margin-bottom: 50px;
+    }
+
+    .about-description {
+        padding-bottom: 35px;
+    }
+
+    .social-media__description {
+        margin-bottom: 80px;
+    }
+}

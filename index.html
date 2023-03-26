@@ -7,36 +7,38 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/tablet.css">
+    <link rel="stylesheet" href="/css/mobile.css">
     <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/gilroy-medium" rel="stylesheet">
                 
 </head>
 <body>
-    <div class="main-container">
-        <header class="header">
+    <header class="header">
+        <div class="main-container">
             <div class="header__wrapper">
                 <ul class="navigate-menu__wrapper">
-                    <li class="navigate-menu__item"><a href="#" class="navigate-menu__link">
+                    <li class="navigate-menu__item"><a href="#home" class="navigate-menu__link navigate-menu__link_selected">
                         Home
                     </a></li>
-                    <li class="navigate-menu__item"><a href="#back" class="navigate-menu__link">
+                    <li class="navigate-menu__item"><a href="#about" class="navigate-menu__link">
                         About me
                     </a></li>
-                    <li class="navigate-menu__item"><a href="#zak" class="navigate-menu__link">
+                    <li class="navigate-menu__item"><a href="#skills" class="navigate-menu__link">
                         Skills
                     </a></li>
-                    <li class="navigate-menu__item"><a href="#dak" class="navigate-menu__link">
+                    <li class="navigate-menu__item"><a href="#portfolio" class="navigate-menu__link">
                         Portfolio
                     </a></li>
-                    <li class="navigate-menu__item"><a href="#lack" class="navigate-menu__link">
+                    <li class="navigate-menu__item"><a href="#contacts" class="navigate-menu__link">
                         Contacts
                     </a></li>
                 </ul>
             </div>
-        </header>
-    </div>
-    <div class="main-container">
-        <div class="homepage">
+        </div>
+    </header>
+   
+    <div class="homepage" id="home">
+        <div class="main-container">
             <div class="homepage__header">
                 <div class="bio__wrapper">
                     <div class="bio__fullname">
@@ -49,15 +51,24 @@
                         RU <span class="bio__locale_activated">| ENG</span>
                     </div>
                 </div>
+                <div class="bio-hamburger">
+                    <span class="bio-hamburger__item"></span>
+                    <span class="bio-hamburger__item"></span>
+                    <span class="bio-hamburger__item"></span>
+                </div>
             </div>
             <div class="homepage__photo">
-                <img src="/img/photo.png" alt="Denis Novik">
+                <picture>
+                    <source media="(max-width: 380px)" srcset="/img/photo_mob.png" />
+                    <img src="/img/photo.png" alt="Denis Novik">
+                </picture>
             </div>
         </div>
     </div>
-    <div class="about">
+    
+    <div class="about" id="about">
         <div class="main-container">
-            <div class="about-header">About me</div>
+            <div class="about-header" >About me</div>
             <div class="about-description">
                 <div class="about-description__item">Hi, I'm Denis – UX/UI designer from Minsk. 
                     <br>I'm interested in design and everything connected with it.
@@ -70,9 +81,9 @@
             </div>
         </div>
     </div>
-    <div class="skills-page">
+    <div class="skills-page" id="skills">
         <div class="main-container">
-            <div class="skills-page__title">Skills</div>
+            <div class="skills-page__title" >Skills</div>
             <div class="skills-page__subtitle">I work in such programs as</div>
             <div class="skill-cards">
                 <div class="skill-card">
@@ -134,7 +145,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-page">
+    <div class="portfolio-page" id="portfolio">
         <div class="main-container">
             <div class="portfolio-page__title">Portfolio</div>
             <div class="portfolio-items">
@@ -165,7 +176,7 @@
             </div>
         </div>
     </div>
-    <div class="contacts-page">
+    <div class="contacts-page" id="contacts">
         <div class="main-container">
             <div class="contacts-container">
                 <div class="contacts-menu">
@@ -264,5 +275,6 @@
             </div>
         </div>
     </div>
+    <script src="/js/app.js"></script>
 </body>
 </html>

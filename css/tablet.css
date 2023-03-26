@@ -1,0 +1,30 @@
+@media (max-width: 992px) {
+    .about-header {
+        padding-top: 90px;
+    }
+
+    .about-description {
+        padding-bottom: 45px;
+    }
+    
+    .bio__fullname {
+        font-size: 40px;
+    }
+
+    .portfolio-page__title {
+        padding-top: 90px;
+    }
+
+    .portfolio-item {
+        margin-bottom: 85px;
+
+    }
+
+    .contacts-menu__title {
+        padding-top: 90px;
+    }
+
+    .social-media__description {
+        margin-bottom: 100px;
+    }
+}
